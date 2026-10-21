@@ -20,6 +20,10 @@ A local Experience Builder Developer Edition with a set of custom widgets and tw
 | **UoM Energy Map** (app 0) | https://localhost:3001/experience/0/ | UoM Tour |
 | **Philadelphia Crime & Temp Map** (app 1) | https://localhost:3001/experience/1/ | Temp Simulator, Study Context |
 
+![Temp Simulator at 92 °F: the map keeps the 284 counties with more than 500 violent crimes per 100k](docs/screenshots/temp-simulator.jpg)
+
+![Study Context explaining how to use the simulator](docs/screenshots/study-context.jpg)
+
 App 0's map is a University of Manchester web map. It doesn't load without signing in to the university's ArcGIS account. App 1 uses public data.
 
 ## Custom widgets
