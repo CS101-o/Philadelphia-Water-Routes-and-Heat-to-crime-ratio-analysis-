@@ -8,6 +8,8 @@ The main question: **which creeks carry the most pressure from combined sewer ov
 
 The general Experience Builder setup and the other custom widgets are described in the README on `main`.
 
+![Watershed Ranking: watersheds ranked by combined sewer outfalls per creek mile, over the creek network and outfalls](docs/screenshots/watershed-ranking.jpg)
+
 ## Findings
 
 Overlaying each watershed on the creek network and the city's 1,292 sewer outfalls:
@@ -46,11 +48,17 @@ All three are in the **Water Tools** controller at the bottom left of the map.
 | **Rain Drop** | `water-raindrop` | Click the map to see which watershed the spot drains to, the nearest creek and how far away it is, and the nearest combined sewer outfall. It only listens for clicks while its panel is open. |
 | **Creek Corridor** | `water-corridor` | Choose a creek and a width (50–1,000 ft each side). Draws a geodesic buffer around the creek and counts the outfalls and sampling sites inside it. |
 
+![Rain Drop: rain clicked in Roxborough drains to the Wissahickon watershed, 0.4 mi from Monoshone Creek](docs/screenshots/rain-drop.jpg)
+
+![Creek Corridor: a 300 ft buffer along Cobbs Creek contains 22 combined sewer outfalls](docs/screenshots/creek-corridor.jpg)
+
 Each widget's settings let you pick the map. If none is picked, the first Map widget on the page is used. Creek Corridor also has a default width setting.
 
 ### Built-in widgets in the app
 
 - **Table** (map mode): lists the city layers the widgets add to the map. For example, filter *Sewer outfalls* for `outfall_type = COM` to list the combined sewer outfalls.
+  ![Table: the Sewer outfalls layer, 1,292 records](docs/screenshots/table.jpg)
+
 - **Analysis** has three tools, each adding its result to the map with export allowed:
   - **Enrich Layer** on Watersheds: demographics per watershed, to compare with the CSO ranking.
   - **Find Hot Spots** on Sewer outfalls, with Watersheds as the bounding area: statistically significant clusters of outfalls.
