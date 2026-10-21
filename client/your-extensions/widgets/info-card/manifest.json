@@ -1,0 +1,19 @@
+{
+  "name": "info-card",
+  "label": "Info Card",
+  "type": "widget",
+  "version": "1.20.0",
+  "exbVersion": "1.20.0",
+  "author": "Kaan Oktem",
+  "description": "A simple card with a title and text, edited from the settings panel.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasSettingPage": true
+  },
+  "translatedLocales": ["en"],
+  "defaultSize": {
+    "width": 300,
+    "height": 160
+  }
+}

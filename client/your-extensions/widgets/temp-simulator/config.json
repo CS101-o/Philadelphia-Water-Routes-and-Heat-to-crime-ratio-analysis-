@@ -1,0 +1,13 @@
+{
+  "crimeField": "v043_rawvalue",
+  "defaultUnit": "F",
+  "minF": 40,
+  "maxF": 105,
+  "initialF": 70,
+  "tiers": [
+    { "aboveF": null, "label": "Baseline", "uplift": 0, "minCrimeRate": null, "color": "#28a745" },
+    { "aboveF": 75, "label": "Elevated", "uplift": 12, "minCrimeRate": 300, "color": "#e0a800" },
+    { "aboveF": 85, "label": "High", "uplift": 18, "minCrimeRate": 500, "color": "#fd7e14" },
+    { "aboveF": 95, "label": "Critical", "uplift": 25, "minCrimeRate": 800, "color": "#dc3545" }
+  ]
+}

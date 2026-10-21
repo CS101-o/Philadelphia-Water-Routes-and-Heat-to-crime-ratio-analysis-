@@ -1,0 +1,1153 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page"
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "bbox": {
+            "left": "-0.0%",
+            "right": "2.1%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "97.9%",
+            "height": "100.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_1": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {
+            "left": "0.0%",
+            "right": "80.0%",
+            "top": "88.5%",
+            "bottom": "4.3%",
+            "width": "20.0%",
+            "height": "7.2%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "AUTO",
+              "height": "AUTO",
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            }
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_3",
+          "bbox": {
+            "left": "6.7%",
+            "right": "79.5%",
+            "top": "89.5%",
+            "bottom": "4.4%",
+            "width": "13.8%",
+            "height": "6.2%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "AUTO",
+              "height": "AUTO",
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        },
+        "3": {
+          "type": "WIDGET",
+          "widgetId": "widget_5",
+          "bbox": {
+            "left": "17.4%",
+            "right": "77.0%",
+            "top": "89.6%",
+            "bottom": "4.3%",
+            "width": "5.6%",
+            "height": "6.2%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "AUTO",
+              "height": "AUTO",
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        },
+        "6": {
+          "type": "WIDGET",
+          "widgetId": "widget_16",
+          "bbox": {
+            "left": "11.9%",
+            "right": "82.5%",
+            "top": "88.7%",
+            "bottom": "4.3%",
+            "width": "5.6%",
+            "height": "7.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "AUTO",
+              "height": "AUTO",
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "order": [
+        "0",
+        "1",
+        "3",
+        "6"
+      ]
+    },
+    "layout_2": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_6",
+          "bbox": {},
+          "setting": {}
+        }
+      },
+      "type": "FIXED",
+      "label": "Controller layout",
+      "order": [
+        "0"
+      ]
+    },
+    "layout_3": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_7",
+          "bbox": {},
+          "setting": {}
+        }
+      },
+      "type": "FIXED",
+      "label": "Controller layout",
+      "order": [
+        "0"
+      ]
+    },
+    "layout_5": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_10",
+          "bbox": {},
+          "setting": {}
+        }
+      },
+      "type": "FIXED",
+      "label": "Controller layout",
+      "order": [
+        "0"
+      ]
+    },
+    "layout_7": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_15",
+          "bbox": {},
+          "setting": {}
+        }
+      },
+      "type": "FIXED",
+      "label": "Controller layout",
+      "order": [
+        "0"
+      ]
+    }
+  },
+  "exbVersion": "1.20.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/master/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.20.0",
+      "label": "Map",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapDataSourceID": "dataSource_2",
+        "initialMapState": null,
+        "scaleRange": null,
+        "customLODs": null
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        },
+        "zoomToFeature": {
+          "enabled": false
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2",
+          "mainDataSourceId": "dataSource_2"
+        }
+      ]
+    },
+    "widget_2": {
+      "uri": "widgets/common/controller/",
+      "version": "1.20.0",
+      "inControllerUx": "offPanel",
+      "label": "Widget Controller",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": true,
+          "openStarts": [],
+          "displayType": "STACK",
+          "vertical": false,
+          "size": {}
+        },
+        "appearance": {
+          "space": 0,
+          "advanced": false,
+          "card": {
+            "showLabel": false,
+            "labelGrowth": 10,
+            "avatar": {
+              "type": "primary",
+              "size": "default",
+              "shape": "circle"
+            }
+          }
+        }
+      },
+      "id": "widget_2",
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_2"
+        }
+      }
+    },
+    "widget_3": {
+      "uri": "widgets/common/controller/",
+      "version": "1.20.0",
+      "inControllerUx": "offPanel",
+      "label": "Widget Controller 2",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": true,
+          "openStarts": [],
+          "displayType": "STACK",
+          "vertical": false,
+          "size": {
+            "widget_7": {
+              "width": 432.84714498684565,
+              "height": 371.7760559675131
+            }
+          }
+        },
+        "appearance": {
+          "space": 0,
+          "advanced": false,
+          "card": {
+            "showLabel": false,
+            "labelGrowth": 10,
+            "avatar": {
+              "type": "primary",
+              "size": "default",
+              "shape": "circle"
+            }
+          }
+        }
+      },
+      "id": "widget_3",
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_3"
+        }
+      }
+    },
+    "widget_5": {
+      "uri": "widgets/common/controller/",
+      "version": "1.20.0",
+      "inControllerUx": "offPanel",
+      "label": "Widget Controller 4",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": true,
+          "openStarts": [],
+          "displayType": "STACK",
+          "vertical": false,
+          "size": {}
+        },
+        "appearance": {
+          "space": 0,
+          "advanced": false,
+          "card": {
+            "showLabel": false,
+            "labelGrowth": 10,
+            "avatar": {
+              "type": "primary",
+              "size": "default",
+              "shape": "circle"
+            }
+          }
+        }
+      },
+      "id": "widget_5",
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_5"
+        }
+      }
+    },
+    "widget_6": {
+      "uri": "widgets/common/table/",
+      "version": "1.20.0",
+      "label": "Table",
+      "config": {
+        "layersConfig": [],
+        "mapViewsConfig": {},
+        "tableMode": "MAP",
+        "respectMapRange": false,
+        "arrangeType": "TABS",
+        "pagingStyle": "SCROLL",
+        "pageSize": 50,
+        "enableRelatedRecords": false,
+        "enableAttachments": false,
+        "columnSetting": {
+          "responsiveType": "FIXED",
+          "columnWidth": 200,
+          "wrapText": false,
+          "textAlign": "start"
+        },
+        "headerFontSetting": {
+          "backgroundColor": "",
+          "fontSize": 14,
+          "bold": false,
+          "color": ""
+        },
+        "enableSelect": true,
+        "selectMode": "SINGLE",
+        "enableRefresh": true,
+        "enableDelete": false,
+        "enableShowHideColumn": true,
+        "showCount": true,
+        "enableMapExtentFilter": true,
+        "defaultExtentFilterEnabled": false
+      },
+      "id": "widget_6",
+      "useMapWidgetIds": [
+        "widget_1"
+      ],
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      }
+    },
+    "widget_7": {
+      "uri": "widgets/common/chart/",
+      "version": "1.20.0",
+      "label": "Chart",
+      "config": {
+        "template": "column",
+        "webChart": {
+          "version": "25.0.0",
+          "id": "column",
+          "type": "chart",
+          "dataSource": {
+            "query": {
+              "groupByFieldsForStatistics": [
+                "county"
+              ],
+              "outStatistics": [
+                {
+                  "statisticType": "sum",
+                  "onStatisticField": "v043_rawvalue",
+                  "outStatisticFieldName": "sum_of_v043_rawvalue"
+                }
+              ]
+            }
+          },
+          "rotated": false,
+          "colorMatch": true,
+          "stackedType": "sideBySide",
+          "series": [
+            {
+              "type": "barSeries",
+              "id": "v043_rawvalue",
+              "name": "Violent crime offenses per 100,000",
+              "x": "county",
+              "y": "sum_of_v043_rawvalue",
+              "fillSymbol": {
+                "type": "esriSFS",
+                "style": "esriSFSSolid",
+                "color": "#5E8FD0",
+                "outline": {
+                  "type": "esriSLS",
+                  "style": "esriSLSSolid",
+                  "color": "var(--sys-color-divider-secondary)",
+                  "width": 0
+                }
+              },
+              "dataLabels": {
+                "type": "chartText",
+                "visible": false,
+                "content": {
+                  "type": "esriTS",
+                  "color": "var(--sys-color-surface-paper-hint)",
+                  "font": {
+                    "family": "inherit",
+                    "size": 10,
+                    "style": "normal",
+                    "weight": "normal",
+                    "decoration": "none"
+                  },
+                  "horizontalAlignment": "center",
+                  "verticalAlignment": "top"
+                }
+              },
+              "binTemporalData": false,
+              "hideOversizedStackedLabels": false,
+              "dataTooltipVisible": true
+            }
+          ],
+          "axes": [
+            {
+              "type": "chartAxis",
+              "visible": true,
+              "isLogarithmic": false,
+              "title": {
+                "type": "chartText",
+                "visible": true,
+                "content": {
+                  "type": "esriTS",
+                  "color": "var(--sys-color-surface-paper-text)",
+                  "font": {
+                    "family": "inherit",
+                    "size": 14,
+                    "style": "normal",
+                    "weight": "normal",
+                    "decoration": "none"
+                  },
+                  "horizontalAlignment": "center",
+                  "verticalAlignment": "middle",
+                  "text": "county"
+                }
+              },
+              "labels": {
+                "type": "chartText",
+                "visible": true,
+                "content": {
+                  "type": "esriTS",
+                  "color": "var(--sys-color-surface-paper-hint)",
+                  "font": {
+                    "family": "inherit",
+                    "size": 12,
+                    "style": "normal",
+                    "weight": "normal",
+                    "decoration": "none"
+                  },
+                  "horizontalAlignment": "center",
+                  "verticalAlignment": "middle"
+                }
+              },
+              "valueFormat": {
+                "type": "category",
+                "characterLimit": 11
+              },
+              "lineSymbol": {
+                "type": "esriSLS",
+                "style": "esriSLSSolid",
+                "color": "var(--sys-color-divider-primary)",
+                "width": 1
+              },
+              "grid": {
+                "type": "esriSLS",
+                "style": "esriSLSDash",
+                "color": "var(--sys-color-divider-tertiary)",
+                "width": 0
+              }
+            },
+            {
+              "type": "chartAxis",
+              "visible": true,
+              "isLogarithmic": false,
+              "title": {
+                "type": "chartText",
+                "visible": true,
+                "content": {
+                  "type": "esriTS",
+                  "color": "var(--sys-color-surface-paper-text)",
+                  "font": {
+                    "family": "inherit",
+                    "size": 14,
+                    "style": "normal",
+                    "weight": "normal",
+                    "decoration": "none"
+                  },
+                  "horizontalAlignment": "center",
+                  "verticalAlignment": "middle",
+                  "text": "violent crimes"
+                }
+              },
+              "labels": {
+                "type": "chartText",
+                "visible": true,
+                "content": {
+                  "type": "esriTS",
+                  "color": "var(--sys-color-surface-paper-hint)",
+                  "font": {
+                    "family": "inherit",
+                    "size": 12,
+                    "style": "normal",
+                    "weight": "normal",
+                    "decoration": "none"
+                  },
+                  "horizontalAlignment": "center",
+                  "verticalAlignment": "middle"
+                }
+              },
+              "valueFormat": {
+                "type": "number",
+                "intlOptions": {
+                  "style": "decimal",
+                  "useGrouping": true,
+                  "minimumFractionDigits": 0,
+                  "maximumFractionDigits": 0
+                }
+              },
+              "lineSymbol": {
+                "type": "esriSLS",
+                "style": "esriSLSSolid",
+                "color": "var(--sys-color-divider-primary)",
+                "width": 1
+              },
+              "grid": {
+                "type": "esriSLS",
+                "style": "esriSLSDash",
+                "color": "var(--sys-color-divider-tertiary)",
+                "width": 0
+              }
+            }
+          ],
+          "background": "var(--sys-color-surface-paper)",
+          "title": {
+            "type": "chartText",
+            "visible": true,
+            "content": {
+              "type": "esriTS",
+              "color": "var(--sys-color-surface-paper-text)",
+              "font": {
+                "family": "inherit",
+                "size": 16,
+                "style": "normal",
+                "weight": "normal",
+                "decoration": "none"
+              },
+              "horizontalAlignment": "center",
+              "text": "Sum of Violent crime offenses per 100,000 by Name"
+            }
+          },
+          "footer": {
+            "type": "chartText",
+            "visible": true,
+            "content": {
+              "type": "esriTS",
+              "color": "var(--sys-color-surface-paper-hint)",
+              "font": {
+                "family": "inherit",
+                "size": 12,
+                "style": "normal",
+                "weight": "normal",
+                "decoration": "none"
+              },
+              "horizontalAlignment": "center",
+              "text": ""
+            }
+          },
+          "legend": {
+            "type": "chartLegend",
+            "visible": true,
+            "title": {
+              "type": "chartText",
+              "visible": true,
+              "content": {
+                "type": "esriTS",
+                "color": "var(--sys-color-surface-paper-text)",
+                "font": {
+                  "family": "inherit",
+                  "size": 14,
+                  "style": "normal",
+                  "weight": "normal",
+                  "decoration": "none"
+                },
+                "horizontalAlignment": "center",
+                "text": ""
+              }
+            },
+            "body": {
+              "type": "esriTS",
+              "color": "var(--sys-color-surface-paper-text)",
+              "font": {
+                "family": "inherit",
+                "size": 12,
+                "style": "normal",
+                "weight": "normal",
+                "decoration": "none"
+              },
+              "horizontalAlignment": "center",
+              "text": ""
+            },
+            "position": "bottom"
+          },
+          "orderOptions": {
+            "orderByFields": [
+              "county ASC"
+            ],
+            "data": {
+              "orderType": "arcgis-charts-category",
+              "orderBy": "ASC",
+              "preferLabel": true
+            }
+          }
+        },
+        "tools": {
+          "cursorEnable": true
+        }
+      },
+      "id": "widget_7",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2-18385e816ab-layer-7-18385e8170f-layer-8-dataView_1",
+          "mainDataSourceId": "dataSource_2-18385e816ab-layer-7-18385e8170f-layer-8",
+          "rootDataSourceId": "dataSource_2",
+          "dataViewId": "dataView_1",
+          "fields": [
+            "county",
+            "v043_rawvalue"
+          ]
+        }
+      ],
+      "outputDataSources": [
+        "widget_7_output"
+      ]
+    },
+    "widget_10": {
+      "uri": "widgets/study-context/",
+      "version": "1.20.0",
+      "label": "Study Context",
+      "config": null,
+      "id": "widget_10"
+    },
+    "widget_15": {
+      "uri": "widgets/temp-simulator/",
+      "version": "1.20.0",
+      "label": "Temp Simulator 2",
+      "config": {
+        "crimeField": "v043_rawvalue",
+        "defaultUnit": "C",
+        "minF": 40,
+        "maxF": 105,
+        "initialF": 70,
+        "tiers": [
+          {
+            "aboveF": null,
+            "label": "Baseline",
+            "uplift": 0,
+            "minCrimeRate": null,
+            "color": "#28a745"
+          },
+          {
+            "aboveF": 75,
+            "label": "Elevated",
+            "uplift": 12,
+            "minCrimeRate": 300,
+            "color": "#e0a800"
+          },
+          {
+            "aboveF": 85,
+            "label": "High",
+            "uplift": 18,
+            "minCrimeRate": 500,
+            "color": "#fd7e14"
+          },
+          {
+            "aboveF": 95,
+            "label": "Critical",
+            "uplift": 25,
+            "minCrimeRate": 800,
+            "color": "#dc3545"
+          }
+        ]
+      },
+      "id": "widget_15",
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      }
+    },
+    "widget_16": {
+      "uri": "widgets/common/controller/",
+      "version": "1.20.0",
+      "inControllerUx": "offPanel",
+      "label": "Widget Controller 6",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": true,
+          "openStarts": [],
+          "displayType": "STACK",
+          "vertical": false,
+          "size": {}
+        },
+        "appearance": {
+          "space": 0,
+          "advanced": false,
+          "card": {
+            "showLabel": false,
+            "labelGrowth": 10,
+            "avatar": {
+              "type": "primary",
+              "size": "default",
+              "shape": "circle"
+            }
+          }
+        }
+      },
+      "id": "widget_16",
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_7"
+        }
+      }
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "messageConfigs": {
+    "messageConfig_2": {
+      "id": "messageConfig_2",
+      "widgetId": "widget_7",
+      "messageType": "DATA_RECORDS_SELECTION_CHANGE",
+      "actions": [
+        {
+          "actionId": "widget_1-flash-1776600950488",
+          "widgetId": "widget_1",
+          "sectionId": null,
+          "messageWidgetId": "widget_7",
+          "actionName": "flash",
+          "description": null,
+          "config": {
+            "useAnyTriggerData": true,
+            "messageUseDataSource": {
+              "dataSourceId": "widget_7_output",
+              "mainDataSourceId": "widget_7_output",
+              "rootDataSourceId": null
+            },
+            "actionUseDataSource": null,
+            "sqlExprObj": null,
+            "enabledDataRelationShip": true,
+            "connectionType": "SET_CUSTOM_FIELDS"
+          },
+          "version": "1.20.0",
+          "useDataSources": [
+            {
+              "dataSourceId": "widget_7_output",
+              "mainDataSourceId": "widget_7_output",
+              "rootDataSourceId": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "attributes": {
+    "portalUrl": "https://UoManchester.maps.arcgis.com"
+  },
+  "timestamp": 1792601112784,
+  "sharedThemeVariables": {
+    "header": {
+      "bg": "#6b2c91",
+      "color": "#ffffff"
+    },
+    "body": {
+      "bg": "#ffffff",
+      "color": "#6b2c91",
+      "link": "#1a1a1a"
+    },
+    "button": {
+      "bg": "#6b2c91",
+      "color": "#ffffff"
+    }
+  },
+  "mainLocale": "en-gb",
+  "dataSources": {
+    "dataSource_2": {
+      "id": "dataSource_2",
+      "type": "WEB_MAP",
+      "sourceLabel": "Where are areas with higher ratios of violent crime offenses?",
+      "itemId": "079628c4a33f45f68e3eef5328dc5254",
+      "portalUrl": "https://UoManchester.maps.arcgis.com",
+      "childDataSourceJsons": {
+        "18385e816ab-layer-7": {
+          "id": "dataSource_2-18385e816ab-layer-7",
+          "type": "GROUP_LAYER",
+          "sourceLabel": "County Health Rankings 2022",
+          "childDataSourceJsons": {
+            "18385e8170f-layer-8": {
+              "id": "dataSource_2-18385e816ab-layer-7-18385e8170f-layer-8",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "County",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "3a684a0851e74ff1b55225dbdfde78b4",
+              "layerId": "2",
+              "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/2022_County_Health_Rankings/FeatureServer/2",
+              "dataViews": {
+                "dataView_1": {
+                  "id": "dataView_1",
+                  "label": "Data view 1"
+                }
+              }
+            },
+            "18385e81711-layer-10": {
+              "id": "dataSource_2-18385e816ab-layer-7-18385e81711-layer-10",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Country",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "3a684a0851e74ff1b55225dbdfde78b4",
+              "layerId": "0",
+              "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/2022_County_Health_Rankings/FeatureServer/0"
+            },
+            "18385e81710-layer-9": {
+              "id": "dataSource_2-18385e816ab-layer-7-18385e81710-layer-9",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "State",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "3a684a0851e74ff1b55225dbdfde78b4",
+              "layerId": "1",
+              "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/2022_County_Health_Rankings/FeatureServer/1"
+            }
+          },
+          "isHidden": false
+        }
+      },
+      "isHidden": false
+    },
+    "widget_7_output": {
+      "id": "widget_7_output",
+      "type": "FEATURE_LAYER",
+      "label": "Chart statistics",
+      "originDataSources": [
+        {
+          "dataSourceId": "dataSource_2-18385e816ab-layer-7-18385e8170f-layer-8-dataView_1",
+          "mainDataSourceId": "dataSource_2-18385e816ab-layer-7-18385e8170f-layer-8",
+          "rootDataSourceId": "dataSource_2",
+          "dataViewId": "dataView_1",
+          "fields": [
+            "county",
+            "v043_rawvalue"
+          ]
+        }
+      ],
+      "isOutputFromWidget": true,
+      "isDataInDataSourceInstance": true,
+      "schema": {
+        "idField": "__outputid__",
+        "label": "Chart statistics",
+        "fields": {
+          "__outputid__": {
+            "jimuName": "__outputid__",
+            "alias": "OBJECTID",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeOID",
+            "name": "__outputid__"
+          },
+          "county": {
+            "jimuName": "county",
+            "name": "county",
+            "type": "STRING",
+            "esriType": "esriFieldTypeString",
+            "alias": "Name",
+            "originFields": [
+              "county"
+            ]
+          },
+          "sum_of_v043_rawvalue": {
+            "jimuName": "sum_of_v043_rawvalue",
+            "name": "sum_of_v043_rawvalue",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeDouble",
+            "alias": "Sum of Violent crime offenses per 100,000",
+            "fieldFormat": {
+              "type": "number",
+              "maximumFractionDigits": 1,
+              "minimumFractionDigits": 1,
+              "style": "decimal",
+              "useGrouping": "always"
+            },
+            "originFields": [
+              "v043_rawvalue"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ]
+}

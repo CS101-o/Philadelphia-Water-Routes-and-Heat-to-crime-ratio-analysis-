@@ -1,0 +1,26 @@
+{
+  "created": 1776589250169,
+  "description": "",
+  "id": "1",
+  "modified": 1792601112833,
+  "owner": "kaan.oktem@student.manchester.ac.uk_UoManchester",
+  "tags": [],
+  "thumbnail": null,
+  "title": "hiladelphia Crime & Temp Map",
+  "type": "Web Experience",
+  "snippet": "",
+  "typeKeywords": [
+    "EXB Experience",
+    "Ready To Use",
+    "JavaScript",
+    "status: Changed",
+    "version:1.20.0",
+    "template:blankfullscreen",
+    "modified: 1792601112828"
+  ],
+  "portalUrl": "https://UoManchester.maps.arcgis.com",
+  "username": "kaan.oktem@student.manchester.ac.uk_UoManchester",
+  "name": "hiladelphia Crime & Temp Map",
+  "isLocalApp": true,
+  "url": null
+}

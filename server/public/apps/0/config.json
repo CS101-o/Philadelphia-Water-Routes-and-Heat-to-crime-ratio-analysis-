@@ -1,0 +1,590 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page"
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "bbox": {
+            "left": "0.0%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "100.0%",
+            "height": "100.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_1": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_6",
+          "bbox": {
+            "left": "10.5%",
+            "right": "76.0%",
+            "top": "86.7%",
+            "bottom": "7.1%",
+            "width": "13.5%",
+            "height": "6.2%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "AUTO",
+              "height": "AUTO",
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "order": [
+        "0"
+      ]
+    },
+    "layout_2": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_16",
+          "bbox": {},
+          "setting": {}
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_17",
+          "bbox": {},
+          "setting": {}
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_18",
+          "bbox": {},
+          "setting": {}
+        },
+        "3": {
+          "type": "WIDGET",
+          "widgetId": "widget_19",
+          "bbox": {},
+          "setting": {}
+        },
+        "4": {
+          "type": "WIDGET",
+          "widgetId": "widget_22",
+          "bbox": {},
+          "setting": {}
+        }
+      },
+      "type": "FIXED",
+      "label": "Controller layout",
+      "order": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  },
+  "exbVersion": "1.20.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/master/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.20.0",
+      "label": "Map",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapDataSourceID": "dataSource_1",
+        "initialMapState": null,
+        "scaleRange": null,
+        "customLODs": null
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_6": {
+      "uri": "widgets/common/controller/",
+      "version": "1.20.0",
+      "inControllerUx": "offPanel",
+      "label": "Widget Controller",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": true,
+          "openStarts": [],
+          "displayType": "STACK",
+          "vertical": false,
+          "size": {}
+        },
+        "appearance": {
+          "space": 0,
+          "advanced": false,
+          "card": {
+            "showLabel": false,
+            "labelGrowth": 10,
+            "avatar": {
+              "type": "primary",
+              "size": "default",
+              "shape": "circle"
+            }
+          }
+        }
+      },
+      "id": "widget_6",
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_2"
+        }
+      }
+    },
+    "widget_16": {
+      "uri": "widgets/arcgis/map-layers/",
+      "version": "1.20.0",
+      "label": "Map Layers",
+      "config": {
+        "useMapWidget": false,
+        "information": true,
+        "expandAllLayers": true,
+        "layerBatchOptions": true,
+        "showTables": true
+      },
+      "id": "widget_16",
+      "useMapWidgetIds": [],
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_17": {
+      "uri": "widgets/arcgis/coordinates/",
+      "version": "1.20.0",
+      "inControllerUx": "offPanel",
+      "label": "Coordinates",
+      "config": {
+        "coordinateSystem": [
+          {
+            "id": "system-1",
+            "name": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+            "wkid": "3857",
+            "displayUnit": "",
+            "elevationUnit": "METRIC",
+            "crs": {
+              "name": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+              "wkid": 3857,
+              "wkt": "PROJCS['WGS_1984_Web_Mercator_Auxiliary_Sphere',GEOGCS['GCS_WGS_1984',DATUM['D_WGS_1984',SPHEROID['WGS_1984',6378137.0,298.257223563]],PRIMEM['Greenwich',0.0],UNIT['Degree',0.0174532925199433]],PROJECTION['Mercator_Auxiliary_Sphere'],PARAMETER['False_Easting',0.0],PARAMETER['False_Northing',0.0],PARAMETER['Central_Meridian',0.0],PARAMETER['Standard_Parallel_1',0.0],PARAMETER['Auxiliary_Sphere_Type',0.0],UNIT['Meter',1.0]]"
+            }
+          }
+        ],
+        "coordinateDecimal": 3,
+        "altitudeDecimal": 2,
+        "showSeparators": true,
+        "displayOrder": "XY",
+        "widgetStyle": "CLASSIC",
+        "mapInfo": {
+          "id": "3851ce16a2bc4ab5ae4f63ab4205967c",
+          "title": "Energy Consumption (UoM)",
+          "wkid": 102100,
+          "label": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+          "csUnit": "Meter"
+        },
+        "mapInfo2": {
+          "csUnit": ""
+        }
+      },
+      "id": "widget_17",
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    },
+    "widget_18": {
+      "uri": "widgets/common/chart/",
+      "version": "1.20.0",
+      "label": "Chart",
+      "config": {},
+      "id": "widget_18",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-Energy-Consumption-UoM_1583",
+          "mainDataSourceId": "dataSource_1-Energy-Consumption-UoM_1583",
+          "rootDataSourceId": "dataSource_1"
+        }
+      ],
+      "outputDataSources": [
+        "widget_18_output"
+      ]
+    },
+    "widget_19": {
+      "uri": "widgets/common/table/",
+      "version": "1.20.0",
+      "label": "Table",
+      "config": {
+        "layersConfig": [],
+        "mapViewsConfig": {},
+        "tableMode": "MAP",
+        "respectMapRange": false,
+        "arrangeType": "TABS",
+        "pagingStyle": "SCROLL",
+        "pageSize": 50,
+        "enableRelatedRecords": false,
+        "enableAttachments": false,
+        "columnSetting": {
+          "responsiveType": "FIXED",
+          "columnWidth": 200,
+          "wrapText": false,
+          "textAlign": "start"
+        },
+        "headerFontSetting": {
+          "backgroundColor": "",
+          "fontSize": 14,
+          "bold": false,
+          "color": ""
+        },
+        "enableSelect": true,
+        "selectMode": "SINGLE",
+        "enableRefresh": true,
+        "enableDelete": false,
+        "enableShowHideColumn": true,
+        "showCount": true,
+        "enableMapExtentFilter": true,
+        "defaultExtentFilterEnabled": false
+      },
+      "id": "widget_19",
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      },
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    },
+    "widget_22": {
+      "uri": "widgets/uom-tour/",
+      "version": "1.20.0",
+      "label": "UoM Tour",
+      "config": null,
+      "id": "widget_22"
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "messageConfigs": {
+    "messageConfig_1": {
+      "id": "messageConfig_1",
+      "widgetId": "widget_18",
+      "messageType": "DATA_RECORDS_SELECTION_CHANGE",
+      "actions": [
+        {
+          "actionId": "filter-data-record-action-1776529975414",
+          "sectionId": null,
+          "messageWidgetId": "widget_18",
+          "actionName": "filter data record action",
+          "description": null,
+          "config": {
+            "messageUseDataSource": {
+              "dataSourceId": "widget_18_output",
+              "mainDataSourceId": "widget_18_output",
+              "rootDataSourceId": null
+            },
+            "actionUseDataSource": null,
+            "sqlExprObj": null,
+            "enabledDataRelationShip": true,
+            "enableQueryWithCurrentExtent": true
+          },
+          "version": "1.20.0",
+          "useDataSources": [
+            {
+              "dataSourceId": "widget_18_output",
+              "mainDataSourceId": "widget_18_output",
+              "rootDataSourceId": null
+            }
+          ]
+        }
+      ]
+    },
+    "messageConfig_2": {
+      "id": "messageConfig_2",
+      "widgetId": "widget_19",
+      "messageType": "DATA_RECORDS_SELECTION_CHANGE",
+      "actions": [
+        {
+          "actionId": "filter-data-record-action-1776530111725",
+          "sectionId": null,
+          "messageWidgetId": "widget_19",
+          "actionName": "filter data record action",
+          "description": null,
+          "config": {
+            "messageUseDataSource": {
+              "dataSourceId": "dataSource_1-Energy-Consumption-UoM_1583",
+              "mainDataSourceId": "dataSource_1-Energy-Consumption-UoM_1583",
+              "rootDataSourceId": "dataSource_1"
+            },
+            "actionUseDataSource": null,
+            "sqlExprObj": null,
+            "enabledDataRelationShip": true,
+            "enableQueryWithCurrentExtent": true,
+            "connectionType": null
+          },
+          "version": "1.20.0",
+          "useDataSources": [
+            {
+              "dataSourceId": "dataSource_1-Energy-Consumption-UoM_1583",
+              "mainDataSourceId": "dataSource_1-Energy-Consumption-UoM_1583",
+              "rootDataSourceId": "dataSource_1"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "attributes": {
+    "portalUrl": "https://UoManchester.maps.arcgis.com"
+  },
+  "timestamp": 1776530338363,
+  "sharedThemeVariables": {
+    "header": {
+      "bg": "#6b2c91",
+      "color": "#ffffff"
+    },
+    "body": {
+      "bg": "#ffffff",
+      "color": "#6b2c91",
+      "link": "#1a1a1a"
+    },
+    "button": {
+      "bg": "#6b2c91",
+      "color": "#ffffff"
+    }
+  },
+  "mainLocale": "en-gb",
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "Energy Consumption (UoM)",
+      "itemId": "3851ce16a2bc4ab5ae4f63ab4205967c",
+      "portalUrl": "https://UoManchester.maps.arcgis.com"
+    },
+    "widget_18_output": {
+      "id": "widget_18_output",
+      "type": "FEATURE_LAYER",
+      "label": "Chart statistics",
+      "originDataSources": [
+        {
+          "dataSourceId": "dataSource_1-Energy-Consumption-UoM_1583",
+          "mainDataSourceId": "dataSource_1-Energy-Consumption-UoM_1583",
+          "rootDataSourceId": "dataSource_1"
+        }
+      ],
+      "isOutputFromWidget": true,
+      "isDataInDataSourceInstance": true,
+      "schema": {
+        "label": "Chart statistics",
+        "idField": "__outputid__",
+        "fields": {
+          "__outputid__": {
+            "jimuName": "__outputid__",
+            "alias": "OBJECTID",
+            "type": "NUMBER",
+            "esriType": "esriFieldTypeOID",
+            "name": "__outputid__"
+          }
+        }
+      }
+    }
+  },
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "publishTimestamp": 1776588162195
+}
