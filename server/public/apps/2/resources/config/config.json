@@ -20,8 +20,8 @@
           "type": "WIDGET",
           "widgetId": "widget_1",
           "bbox": {
-            "left": "2.1%",
-            "right": "0.0%",
+            "left": "2.2%",
+            "right": "-0.1%",
             "top": "0.0%",
             "bottom": "0.0%",
             "width": "97.9%",
@@ -50,11 +50,81 @@
           "widgetId": "widget_4",
           "bbox": {
             "left": "1.0%",
-            "right": "93.0%",
-            "top": "89.6%",
             "bottom": "4.3%",
             "width": "13.8%",
             "height": "6.2%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "AUTO",
+              "height": "AUTO",
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_17",
+          "bbox": {
+            "left": "15.9%",
+            "right": "78.6%",
+            "top": "88.7%",
+            "bottom": "4.3%",
+            "width": "5.6%",
+            "height": "7.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "AUTO",
+              "height": "AUTO",
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_18",
+          "bbox": {
+            "left": "21.2%",
+            "right": "65.0%",
+            "top": "88.8%",
+            "bottom": "4.2%",
+            "width": "13.8%",
+            "height": "7.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "AUTO",
+              "height": "AUTO",
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        },
+        "4": {
+          "type": "WIDGET",
+          "widgetId": "widget_33",
+          "bbox": {
+            "left": "26.4%",
+            "right": "68.0%",
+            "top": "88.8%",
+            "bottom": "4.2%",
+            "width": "5.6%",
+            "height": "7.0%"
           },
           "setting": {
             "autoProps": {
@@ -73,7 +143,10 @@
       "type": "FIXED",
       "label": "Map FixedLayout",
       "order": [
-        "0"
+        "0",
+        "1",
+        "2",
+        "4"
       ]
     },
     "layout_4": {
@@ -104,6 +177,51 @@
         "1",
         "2"
       ]
+    },
+    "layout_5": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_19",
+          "bbox": {},
+          "setting": {}
+        }
+      },
+      "type": "FIXED",
+      "label": "Controller layout",
+      "order": [
+        "0"
+      ]
+    },
+    "layout_6": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_29",
+          "bbox": {},
+          "setting": {}
+        }
+      },
+      "type": "FIXED",
+      "label": "Controller layout",
+      "order": [
+        "0"
+      ]
+    },
+    "layout_7": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_32",
+          "bbox": {},
+          "setting": {}
+        }
+      },
+      "type": "FIXED",
+      "label": "Controller layout",
+      "order": [
+        "0"
+      ]
     }
   },
   "exbVersion": "1.20.0",
@@ -122,7 +240,7 @@
         "toolConfig": {
           "canZoom": true,
           "canHome": true,
-          "canSearch": true,
+          "canSearch": false,
           "canNavigation": true
         },
         "isUseCustomMapState": false,
@@ -137,7 +255,74 @@
           "LARGE": "layout_1"
         }
       },
-      "useDataSources": []
+      "useDataSources": [],
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      }
     },
     "widget_4": {
       "uri": "widgets/common/controller/",
@@ -165,7 +350,8 @@
               "width": 360,
               "height": 520
             }
-          }
+          },
+          "alignment": "center"
         },
         "appearance": {
           "space": 0,
@@ -223,6 +409,509 @@
       "useMapWidgetIds": [
         "widget_1"
       ]
+    },
+    "widget_17": {
+      "uri": "widgets/common/controller/",
+      "version": "1.20.0",
+      "inControllerUx": "offPanel",
+      "label": "Widget Controller",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": true,
+          "openStarts": [],
+          "displayType": "STACK",
+          "vertical": false,
+          "size": {}
+        },
+        "appearance": {
+          "space": 0,
+          "advanced": false,
+          "card": {
+            "showLabel": false,
+            "labelGrowth": 10,
+            "avatar": {
+              "type": "primary",
+              "size": "default",
+              "shape": "circle"
+            }
+          }
+        }
+      },
+      "id": "widget_17",
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_5"
+        }
+      }
+    },
+    "widget_18": {
+      "uri": "widgets/common/controller/",
+      "version": "1.20.0",
+      "inControllerUx": "offPanel",
+      "label": "Widget Controller 2",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": true,
+          "openStarts": [],
+          "displayType": "STACK",
+          "vertical": false,
+          "size": {}
+        },
+        "appearance": {
+          "space": 0,
+          "advanced": false,
+          "card": {
+            "showLabel": false,
+            "labelGrowth": 10,
+            "avatar": {
+              "type": "primary",
+              "size": "default",
+              "shape": "circle"
+            }
+          }
+        }
+      },
+      "id": "widget_18",
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_6"
+        }
+      }
+    },
+    "widget_19": {
+      "uri": "widgets/common/table/",
+      "version": "1.20.0",
+      "label": "Table",
+      "config": {
+        "layersConfig": [],
+        "mapViewsConfig": {},
+        "tableMode": "MAP",
+        "respectMapRange": false,
+        "arrangeType": "TABS",
+        "pagingStyle": "SCROLL",
+        "pageSize": 50,
+        "enableRelatedRecords": false,
+        "enableAttachments": false,
+        "columnSetting": {
+          "responsiveType": "FIXED",
+          "columnWidth": 200,
+          "wrapText": false,
+          "textAlign": "start"
+        },
+        "headerFontSetting": {
+          "backgroundColor": "",
+          "fontSize": 14,
+          "bold": false,
+          "color": ""
+        },
+        "enableSelect": true,
+        "selectMode": "SINGLE",
+        "enableRefresh": true,
+        "enableDelete": false,
+        "enableShowHideColumn": true,
+        "showCount": true,
+        "enableMapExtentFilter": true,
+        "defaultExtentFilterEnabled": false
+      },
+      "id": "widget_19",
+      "useMapWidgetIds": [
+        "widget_1"
+      ],
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      }
+    },
+    "widget_29": {
+      "uri": "widgets/ba-infographic/",
+      "version": "1.20.0",
+      "label": "Business Analyst",
+      "config": {
+        "widgetMode": "WORKFLOW",
+        "viewMode": "auto",
+        "sourceCountry": "US",
+        "workflowIntroText": "Search for an address or geography or draw a feature on the map to view an infographic.",
+        "workflowIntroTextReports": "Select an infographic to view information about your chosen area.",
+        "workflowIntroTextBuffers": "Enter buffers to set your area of interest.",
+        "langCode": "en-us",
+        "backgroundColor": "#525659",
+        "runReportOnClick": false,
+        "displayHeader": true,
+        "headerColor": "#151515",
+        "headerTextColor": "#FFFFFF",
+        "imageExport": true,
+        "pdf": true,
+        "dynamicHtml": true,
+        "excel": true,
+        "print": true,
+        "fullscreen": true,
+        "zoomLevel": true,
+        "workflowEnableSearch": true,
+        "pointsOfInterest": true,
+        "workflowDisplayIntroText": true,
+        "restrictSearch": true,
+        "workflowEnableUserConfigBuffers": true,
+        "geographies": true,
+        "searchtype": "0",
+        "workflowAvailableBufferRings": true,
+        "workflowAvailableBufferDrivetime": true,
+        "workflowAvailableBufferWalktime": true,
+        "presetSelectedReport": null,
+        "presetSelectedReportName": null,
+        "presetSearchSelectedObject": null,
+        "workflowSearchSelectedObject": null,
+        "workflowIntroTextReportCheckbox": true,
+        "workflowIntroTextBuffersCheckbox": true,
+        "workflowEnableInfographicChoice": true,
+        "workflowBuffer": "ring",
+        "workflowRingsBuffer1": 1,
+        "workflowRingsBuffer2": 3,
+        "workflowRingsBuffer3": 5,
+        "workflowRingsBufferUnit": "miles",
+        "workflowDrivetimeBuffer1": 5,
+        "workflowDrivetimeBuffer2": 10,
+        "workflowDrivetimeBuffer3": 15,
+        "workflowDrivetimeBufferUnit": "minutes",
+        "workflowWalktimeBuffer1": 5,
+        "workflowWalktimeBuffer2": 10,
+        "workflowWalktimeBuffer3": 15,
+        "workflowWalktimeBufferUnit": "minutes",
+        "presetBuffer": "ring",
+        "presetRingsBuffer1": 1,
+        "presetRingsBuffer2": 3,
+        "presetRingsBuffer3": 5,
+        "presetRingsBufferUnit": "miles",
+        "presetDrivetimeBuffer1": 5,
+        "presetDrivetimeBuffer2": 10,
+        "presetDrivetimeBuffer3": 15,
+        "presetDrivetimeBufferUnit": "minutes",
+        "presetWalktimeBuffer1": 5,
+        "presetWalktimeBuffer2": 10,
+        "presetWalktimeBuffer3": 15,
+        "presetWalktimeBufferUnit": "minutes",
+        "availableGeographyLevels": [
+          "Entire Country",
+          "States",
+          "DMAs",
+          "CBSAs",
+          "Congressional Districts",
+          "Tribal Areas",
+          "Tribal Subdivisions",
+          "Tribal Census Tracts",
+          "Tribal Block Groups",
+          "Legislative Districts (Upper)",
+          "Legislative Districts (Lower)",
+          "Public Use Microdata Areas",
+          "Counties",
+          "County Subdivisions",
+          "Cities and Towns (Places)",
+          "Secondary School Districts",
+          "Elementary School Districts",
+          "Unified School Districts",
+          "ZIP Codes",
+          "Census Tracts",
+          "Block Groups"
+        ],
+        "selectedGeographyLevels": [
+          "Entire Country",
+          "States",
+          "DMAs",
+          "CBSAs",
+          "Congressional Districts",
+          "Tribal Areas",
+          "Tribal Subdivisions",
+          "Tribal Census Tracts",
+          "Tribal Block Groups",
+          "Legislative Districts (Upper)",
+          "Legislative Districts (Lower)",
+          "Public Use Microdata Areas",
+          "Counties",
+          "County Subdivisions",
+          "Cities and Towns (Places)",
+          "Secondary School Districts",
+          "Elementary School Districts",
+          "Unified School Districts",
+          "ZIP Codes",
+          "Census Tracts",
+          "Block Groups"
+        ],
+        "drawPointEnabled": true,
+        "drawPolygonEnabled": true,
+        "travelModeData": {
+          "name": "Driving Time",
+          "itemId": "FEgifRtFndKNcJMJ",
+          "type": "AUTOMOBILE",
+          "description": "Models the movement of cars and other similar small automobiles, such as pickup trucks, and finds solutions that optimize travel time. Travel obeys one-way roads, avoids illegal turns, and follows other rules that are specific to cars. When you specify a start time, dynamic travel speeds based on traffic are used where it is available.",
+          "travelModeData": {
+            "attributeParameterValues": [
+              {
+                "attributeName": "TravelTime",
+                "parameterName": "Vehicle Maximum Speed (km/h)",
+                "value": 0
+              },
+              {
+                "attributeName": "Avoid Carpool Roads",
+                "parameterName": "Restriction Usage",
+                "value": "PROHIBITED"
+              },
+              {
+                "attributeName": "Avoid Express Lanes",
+                "parameterName": "Restriction Usage",
+                "value": "PROHIBITED"
+              },
+              {
+                "attributeName": "Avoid Gates",
+                "parameterName": "Restriction Usage",
+                "value": "AVOID_MEDIUM"
+              },
+              {
+                "attributeName": "Avoid Private Roads",
+                "parameterName": "Restriction Usage",
+                "value": "AVOID_MEDIUM"
+              },
+              {
+                "attributeName": "Avoid Unpaved Roads",
+                "parameterName": "Restriction Usage",
+                "value": "AVOID_HIGH"
+              },
+              {
+                "attributeName": "Driving an Automobile",
+                "parameterName": "Restriction Usage",
+                "value": "PROHIBITED"
+              },
+              {
+                "attributeName": "Roads Under Construction Prohibited",
+                "parameterName": "Restriction Usage",
+                "value": "PROHIBITED"
+              },
+              {
+                "attributeName": "Through Traffic Prohibited",
+                "parameterName": "Restriction Usage",
+                "value": "AVOID_HIGH"
+              }
+            ],
+            "description": "Models the movement of cars and other similar small automobiles, such as pickup trucks, and finds solutions that optimize travel time. Travel obeys one-way roads, avoids illegal turns, and follows other rules that are specific to cars. When you specify a start time, dynamic travel speeds based on traffic are used where it is available.",
+            "distanceAttributeName": "Kilometers",
+            "id": "FEgifRtFndKNcJMJ",
+            "impedanceAttributeName": "TravelTime",
+            "name": "Driving Time",
+            "restrictionAttributeNames": [
+              "Avoid Carpool Roads",
+              "Avoid Express Lanes",
+              "Avoid Gates",
+              "Avoid Private Roads",
+              "Avoid Unpaved Roads",
+              "Driving an Automobile",
+              "Roads Under Construction Prohibited",
+              "Through Traffic Prohibited"
+            ],
+            "simplificationTolerance": 10,
+            "simplificationToleranceUnits": "esriMeters",
+            "timeAttributeName": "TravelTime",
+            "type": "AUTOMOBILE",
+            "useHierarchy": true,
+            "uturnAtJunctions": "esriNFSBAtDeadEndsAndIntersections"
+          }
+        },
+        "travelDirection": "Away From Facility",
+        "useTrafficEnabled": true,
+        "useTrafficChecked": false,
+        "trafficType": "live",
+        "offsetTime": 0,
+        "offsetDay": "Monday",
+        "offsetHr": "12:00 PM",
+        "selectedHierarchy": "esri2025",
+        "appSearchScope": "0",
+        "appSearchScopeLocked": false,
+        "isSavedExperience": true,
+        "hasInitializedGeographyLevels": true,
+        "widgetPlaceholderText": "Select a feature on the map or search for a location to view infographics.",
+        "widgetPlaceholderTextToggle": true,
+        "igBackgroundColor": "#525659",
+        "baSearchType": "0",
+        "autoSelectLatestDataSource": false,
+        "reportList": {},
+        "presetBuffersHaveChanged": false,
+        "searchbarEnabled": true,
+        "geographiesChecked": true
+      },
+      "id": "widget_29",
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    },
+    "widget_32": {
+      "uri": "widgets/arcgis/analysis/",
+      "version": "1.20.0",
+      "label": "Analysis",
+      "config": {
+        "toolList": [
+          {
+            "id": "38d39c60-cd86-11f1-92df-97454624d51a",
+            "type": "standard",
+            "toolName": "EnrichLayer",
+            "analysisEngine": "standard",
+            "config": {
+              "input": {
+                "selectFromMapLayer": false,
+                "allowBrowserLayers": false,
+                "allowDrawingOnTheMap": false,
+                "allowLocalFileUpload": false,
+                "allowServiceUrl": false,
+                "selectFromOtherWidget": false
+              },
+              "output": {
+                "addResultLayersToMapAuto": true,
+                "allowExportResults": true
+              },
+              "option": {}
+            }
+          },
+          {
+            "id": "31d6ca66-cd88-11f1-be85-0e7fa52b27e6",
+            "type": "standard",
+            "toolName": "FindHotSpots",
+            "analysisEngine": "standard",
+            "config": {
+              "input": {
+                "selectFromMapLayer": false,
+                "allowBrowserLayers": false,
+                "allowDrawingOnTheMap": false,
+                "allowLocalFileUpload": false,
+                "allowServiceUrl": false,
+                "selectFromOtherWidget": false
+              },
+              "output": {
+                "addResultLayersToMapAuto": true,
+                "allowExportResults": true
+              },
+              "option": {}
+            }
+          },
+          {
+            "id": "4662ae20-cd86-11f1-92df-97454624d51a",
+            "type": "standard",
+            "toolName": "SummarizeCenterAndDispersion",
+            "analysisEngine": "standard",
+            "config": {
+              "input": {
+                "selectFromMapLayer": false,
+                "allowBrowserLayers": false,
+                "allowDrawingOnTheMap": false,
+                "allowLocalFileUpload": false,
+                "allowServiceUrl": false,
+                "selectFromOtherWidget": false
+              },
+              "output": {
+                "addResultLayersToMapAuto": true,
+                "allowExportResults": true
+              },
+              "option": {}
+            }
+          }
+        ]
+      },
+      "id": "widget_32",
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    },
+    "widget_33": {
+      "uri": "widgets/common/controller/",
+      "version": "1.20.0",
+      "inControllerUx": "offPanel",
+      "label": "Widget Controller 3",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": true,
+          "openStarts": [],
+          "displayType": "STACK",
+          "vertical": false,
+          "size": {}
+        },
+        "appearance": {
+          "space": 0,
+          "advanced": false,
+          "card": {
+            "showLabel": false,
+            "labelGrowth": 10,
+            "avatar": {
+              "type": "primary",
+              "size": "default",
+              "shape": "circle"
+            }
+          }
+        }
+      },
+      "id": "widget_33",
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_7"
+        }
+      }
     }
   },
   "widgetsManifest": {},
@@ -233,7 +922,7 @@
   "attributes": {
     "portalUrl": "https://UoManchester.maps.arcgis.com"
   },
-  "timestamp": 1776607456832,
+  "timestamp": 1792611747696,
   "sharedThemeVariables": {
     "header": {
       "bg": "#6b2c91",
@@ -256,5 +945,5 @@
       "page_0": []
     }
   ],
-  "publishTimestamp": 1792260828367
+  "publishTimestamp": 1792611747796
 }

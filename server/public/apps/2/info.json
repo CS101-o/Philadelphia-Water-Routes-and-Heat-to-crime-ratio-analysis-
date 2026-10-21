@@ -2,7 +2,7 @@
   "created": 1792602248399,
   "description": "Spatial analysis of Philadelphia creeks, watersheds and sewer outfalls.",
   "id": "2",
-  "modified": 1792608523551,
+  "modified": 1792611747798,
   "owner": "kaan.oktem@student.manchester.ac.uk_UoManchester",
   "tags": [],
   "thumbnail": null,
@@ -13,10 +13,11 @@
     "EXB Experience",
     "Ready To Use",
     "JavaScript",
-    "status: Changed",
+    "status: Published",
     "version:1.20.0",
     "template:blankfullscreen",
-    "modified: 1792608523542"
+    "modified: 1792611747782",
+    "publishVersion:1.20.0"
   ],
   "portalUrl": "https://UoManchester.maps.arcgis.com",
   "username": "kaan.oktem@student.manchester.ac.uk_UoManchester",
