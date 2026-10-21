@@ -1,0 +1,260 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page"
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "bbox": {
+            "left": "2.1%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "97.9%",
+            "height": "100.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_1": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_4",
+          "bbox": {
+            "left": "1.0%",
+            "right": "93.0%",
+            "top": "89.6%",
+            "bottom": "4.3%",
+            "width": "13.8%",
+            "height": "6.2%"
+          },
+          "setting": {
+            "autoProps": {
+              "width": "AUTO",
+              "height": "AUTO",
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "order": [
+        "0"
+      ]
+    },
+    "layout_4": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_8",
+          "bbox": {},
+          "setting": {}
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_9",
+          "bbox": {},
+          "setting": {}
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_12",
+          "bbox": {},
+          "setting": {}
+        }
+      },
+      "type": "FIXED",
+      "label": "Controller layout",
+      "order": [
+        "0",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "exbVersion": "1.20.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/master/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.20.0",
+      "label": "Map",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapDataSourceID": null,
+        "initialMapState": null,
+        "scaleRange": null,
+        "customLODs": null
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "useDataSources": []
+    },
+    "widget_4": {
+      "uri": "widgets/common/controller/",
+      "version": "1.20.0",
+      "inControllerUx": "offPanel",
+      "label": "Water Tools",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": true,
+          "openStarts": [
+            "widget_8"
+          ],
+          "displayType": "STACK",
+          "vertical": false,
+          "size": {
+            "widget_8": {
+              "width": 380,
+              "height": 520
+            },
+            "widget_9": {
+              "width": 340,
+              "height": 320
+            },
+            "widget_12": {
+              "width": 360,
+              "height": 520
+            }
+          }
+        },
+        "appearance": {
+          "space": 0,
+          "advanced": false,
+          "card": {
+            "showLabel": false,
+            "labelGrowth": 10,
+            "avatar": {
+              "type": "primary",
+              "size": "default",
+              "shape": "circle"
+            }
+          }
+        }
+      },
+      "id": "widget_4",
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_4"
+        }
+      }
+    },
+    "widget_8": {
+      "uri": "widgets/water-watersheds/",
+      "version": "1.20.0",
+      "label": "Watershed Ranking",
+      "config": {
+        "version": 1
+      },
+      "id": "widget_8",
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    },
+    "widget_9": {
+      "uri": "widgets/water-raindrop/",
+      "version": "1.20.0",
+      "label": "Rain Drop",
+      "config": {
+        "version": 1
+      },
+      "id": "widget_9",
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    },
+    "widget_12": {
+      "uri": "widgets/water-corridor/",
+      "version": "1.20.0",
+      "label": "Creek Corridor",
+      "config": {
+        "defaultBufferFt": 300
+      },
+      "id": "widget_12",
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://UoManchester.maps.arcgis.com"
+  },
+  "timestamp": 1776607456832,
+  "sharedThemeVariables": {
+    "header": {
+      "bg": "#6b2c91",
+      "color": "#ffffff"
+    },
+    "body": {
+      "bg": "#ffffff",
+      "color": "#6b2c91",
+      "link": "#1a1a1a"
+    },
+    "button": {
+      "bg": "#6b2c91",
+      "color": "#ffffff"
+    }
+  },
+  "mainLocale": "en-gb",
+  "dataSources": {},
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "publishTimestamp": 1792260828367
+}

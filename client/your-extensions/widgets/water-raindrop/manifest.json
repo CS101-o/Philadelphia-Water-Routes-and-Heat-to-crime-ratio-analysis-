@@ -1,0 +1,22 @@
+{
+  "name": "water-raindrop",
+  "label": "Rain Drop",
+  "type": "widget",
+  "version": "1.20.0",
+  "exbVersion": "1.20.0",
+  "author": "Kaan Oktem",
+  "description": "Click the map to see which watershed and creek rain drains to.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "dependency": "jimu-arcgis",
+  "properties": {
+    "hasSettingPage": true
+  },
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 340,
+    "height": 300
+  }
+}

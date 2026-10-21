@@ -1,0 +1,22 @@
+{
+  "name": "water-watersheds",
+  "label": "Watershed Ranking",
+  "type": "widget",
+  "version": "1.20.0",
+  "exbVersion": "1.20.0",
+  "author": "Kaan Oktem",
+  "description": "Ranks Philadelphia watersheds by creek miles and combined sewer outfalls.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "dependency": "jimu-arcgis",
+  "properties": {
+    "hasSettingPage": true
+  },
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 360,
+    "height": 480
+  }
+}

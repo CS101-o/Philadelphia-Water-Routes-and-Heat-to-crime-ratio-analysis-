@@ -1,0 +1,26 @@
+{
+  "created": 1792602248399,
+  "description": "Spatial analysis of Philadelphia creeks, watersheds and sewer outfalls.",
+  "id": "2",
+  "modified": 1792608523551,
+  "owner": "kaan.oktem@student.manchester.ac.uk_UoManchester",
+  "tags": [],
+  "thumbnail": null,
+  "title": "Philadelphia Water Routes",
+  "type": "Web Experience",
+  "snippet": "",
+  "typeKeywords": [
+    "EXB Experience",
+    "Ready To Use",
+    "JavaScript",
+    "status: Changed",
+    "version:1.20.0",
+    "template:blankfullscreen",
+    "modified: 1792608523542"
+  ],
+  "portalUrl": "https://UoManchester.maps.arcgis.com",
+  "username": "kaan.oktem@student.manchester.ac.uk_UoManchester",
+  "name": "Philadelphia Water Routes",
+  "isLocalApp": true,
+  "url": null
+}

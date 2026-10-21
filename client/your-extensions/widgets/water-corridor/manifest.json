@@ -1,0 +1,22 @@
+{
+  "name": "water-corridor",
+  "label": "Creek Corridor",
+  "type": "widget",
+  "version": "1.20.0",
+  "exbVersion": "1.20.0",
+  "author": "Kaan Oktem",
+  "description": "Buffers a creek and counts sewer outfalls and sampling sites inside its corridor.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "dependency": "jimu-arcgis",
+  "properties": {
+    "hasSettingPage": true
+  },
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 340,
+    "height": 460
+  }
+}
