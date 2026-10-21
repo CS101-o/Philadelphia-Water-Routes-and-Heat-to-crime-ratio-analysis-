@@ -76,7 +76,7 @@ npx eslint your-extensions/widgets      # lint
 
 Lint reports `jimu-theme/no-classic-css-utilities` for Bootstrap classes such as `text-muted` and `bg-white`. Those come from the classic theme and are left as they are for now.
 
-## Gotchas
+## warnings
 
 - **Settings panel stuck on a spinner:** this happens to a widget instance saved with `"config": null`, which is what you get if it was added before the widget had a `config.json`. Re-add the widget from *Insert widget → Custom* and delete the old copy. Every custom widget here ships a non-empty `config.json` so new instances don't hit this.
 - **Edits to app config files:** if you edit `server/public/apps/<id>/config.json` by hand, reload the builder before saving there. Otherwise the builder's in-memory copy overwrites the file.
